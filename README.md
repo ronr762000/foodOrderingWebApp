@@ -1,1 +1,1 @@
-# foodOrderingWebApp
+foodOrdering app using Node in backend and React in frontend
