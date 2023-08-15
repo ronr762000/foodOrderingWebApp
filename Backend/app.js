@@ -3,8 +3,9 @@ const app = express()
 const startConnection = require("./dbConfig/startConnection")
 require('dotenv').config()
 const port = process.env.PORT
+const User = require("./Routes/User")
+app.use(express.json())
 
-app.get("/",(req,res) => {
-    res.send("Hello World");
-})
+app.use("/api",User)
+
 startConnection(app,port);
